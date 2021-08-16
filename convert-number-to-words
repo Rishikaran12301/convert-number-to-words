@@ -1,0 +1,156 @@
+#include<stdio.h>
+#include<string.h>
+void main(){
+     char str[100];
+     printf("Input:");
+     scanf("%[^\n]",str);
+     int l=strlen(str);
+     int a=2*l;
+     for(int i=0;i<a-1;i++,l--) {
+          switch(str[i]){
+                case '1': {
+                    if(l==2)
+                    {
+                        switch(str[i+1])
+                        {
+                            case '0':
+                            {
+                                printf("Ten");
+                                i=a-1;
+                                break;
+                                
+                            }
+                            case '1':
+                            {
+                                printf("Eleven");
+                                i=a-1;
+                                break;
+                            }
+                            case '2':
+                            {
+                                printf("Twelve");
+                                i=a-1;
+                                break;
+                            }
+                            case '3':
+                            {
+                                printf("Thirteen");
+                                i=a-1;
+                                break;
+                            }
+                            case '4':
+                            {
+                                printf("Fourteen");
+                                i=a-1;
+                                break;
+                            }
+                            case '5':
+                            {
+                                printf("Fifteen");
+                                i=a-1;
+                                break;
+                            }
+                            case '6':
+                            {
+                                printf("sixteen");
+                                i=a-1;
+                                break;
+                            }
+                            case '7':
+                            {
+                                printf("seventeen");
+                                i=a-1;
+                                break;
+                            }
+                            case '8':
+                            {
+                                printf("Eighteen");
+                                i=a-1;
+                                break;
+                            }
+                            case '9':
+                            {
+                                printf("Nineteen");
+                                i=a-1;
+                                break;
+                            }
+                              
+                        }
+                        break;
+                    }
+                    
+                    else
+                    {
+                        printf("one ");
+                        break;
+                    }
+                }
+                 case '2':{
+                     if(l==2)
+                            printf("twenty ");
+                     else
+                           printf("Two ");
+                     break;
+                }
+                 case '3':{
+                      if(l==2)
+                            printf("thirty ");
+                     else
+                           printf("three ");
+                     break;
+                }
+                 case '4':{
+                      if(l==2)
+                            printf("forty ");
+                     else
+                           printf("four ");
+                     break;
+                }
+                 case '5':{
+                      if(l==2)
+                            printf("fifty ");
+                     else
+                           printf("five ");
+                     break;
+            }
+                 case '6':{
+                       if(l==2)
+                            printf("sixty ");
+                     else
+                            printf("six ");
+                     break;
+                }
+                 case '7':{
+                       if(l==2)
+                            printf("seventy ");
+                     else
+                            printf("seven ");
+                     break;
+                }
+                 case '8':{
+                        if(l==2)
+                            printf("eighty ");
+                     else
+                            printf("eight ");
+                     break;
+                }
+                 case '9':{
+                         if(l==2)
+                            printf("ninety ");
+                     else
+                            printf("nine ");
+                     break;
+                }
+            }
+            switch(l) {
+                    case 3:{
+                        printf("hundred and ");
+                        break;
+                     }
+                    case 4:{
+                         printf("thousand ");
+                         break;
+                    }
+               }
+}
+}
